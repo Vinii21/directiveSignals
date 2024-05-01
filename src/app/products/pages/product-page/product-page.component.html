@@ -2,7 +2,7 @@
 
 <hr>
 
-<form>
+<form [formGroup]="myForm">
 
   <div class="row g-3 align-items-center mb-3">
 
@@ -11,21 +11,26 @@
     </div>
 
     <div class="col-auto">
-        <input type="text" class="form-control">
+        <input formControlName="name" type="text" class="form-control">
     </div>
 
     <div class="col-auto">
-        <span>Algo de información</span>
+        <span customLabel></span>
     </div>
 
   </div>
 
   <div class="row">
     <div class="col">
-      <button class="btn btn-danger">
+      <button (click)="changeColor()" class="btn btn-danger">
         Cambiar color
       </button>
     </div>
   </div>
 
 </form>
+
+<pre class="mt-5">
+  {{myForm.get('name')?.errors | json}}
+</pre>
+<p>Color: {{color}}</p>
