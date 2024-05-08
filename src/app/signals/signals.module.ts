@@ -5,6 +5,7 @@ import { SignalsLayoutComponent } from './layout/signals-layout/signals-layout.c
 import { CounterPagesComponent } from './pages/counter-pages/counter-pages.component';
 import { UserInfoPagesComponent } from './pages/user-info-pages/user-info-pages.component';
 import { PropertiesPagesComponent } from './pages/properties-pages/properties-pages.component';
+import { SizeMenuComponent } from './components/size-menu/size-menu.component';
 
 
 
@@ -13,7 +14,8 @@ import { PropertiesPagesComponent } from './pages/properties-pages/properties-pa
     SignalsLayoutComponent,
     CounterPagesComponent,
     UserInfoPagesComponent,
-    PropertiesPagesComponent
+    PropertiesPagesComponent,
+    SizeMenuComponent
   ],
   imports: [
     CommonModule,
